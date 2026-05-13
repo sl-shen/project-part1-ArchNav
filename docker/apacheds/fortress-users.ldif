@@ -1,0 +1,28 @@
+# Create ArchNav testUser
+# Account：adminUser / password
+dn: uid=adminUser,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: ftUserAttrs
+uid: adminUser
+cn: Admin User
+sn: User
+userPassword: password
+ftId: adminUser
+ftRC: Admin$20260101$none$none$none
+ftRA: Admin
+
+# Account：testUser / password
+dn: uid=testUser,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: ftUserAttrs
+uid: testUser
+cn: Test User
+sn: User
+userPassword: password
+ftId: testUser
+ftRC: NormalUser$20260101$none$none$none
+ftRA: NormalUser

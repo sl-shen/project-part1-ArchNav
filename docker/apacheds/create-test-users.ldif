@@ -1,0 +1,24 @@
+# Create Fortress Test user
+# username: adminUser / password: password
+dn: uid=adminUser,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: ftUserAttrs
+uid: adminUser
+cn: Admin User
+sn: User
+userPassword: password
+ftId: adminUser
+
+# username: normalUser / password: password
+dn: uid=normalUser,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: ftUserAttrs
+uid: normalUser
+cn: Normal User
+sn: User
+userPassword: password
+ftId: normalUser
